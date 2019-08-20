@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on gzy的博客</title>
+    <link>https://gzygzy00.github.io//posts/</link>
+    <description>Recent content in Posts on gzy的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Mon, 19 Aug 2019 21:08:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://gzygzy00.github.io//posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>记录用hugo搭建个人博客</title>
+      <link>https://gzygzy00.github.io//posts/%E8%AE%B0%E5%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 19 Aug 2019 21:08:29 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/%E8%AE%B0%E5%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>开始新的工作已经一个多月了，最近学习了用 hugo 在 GitHub 上搭建个人博客，记录一下。
+  进入hugo releases下载hugo 下载后将exe文件解压缩，并记录path： 右键我的电脑 -&amp;gt; 属性 -&amp;gt; 高级系统设置 -&amp;gt; 环境变量 -&amp;gt; 在 Path 里添加（上下都行） 此时可以通过命令行查看版本信息  进入hugo官网，点击Quick Start（看得懂可以直接参照官网进行设置，无视后面内容） 新建一个文件，在命令行输入: hugo new site 你的github账号.github.io-creator cd 刚刚创建的目录 git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml hugo new posts/my-first-post.md 这时可以用 VSCode 打开 -creator 目录下的 posts/my-first-post.md 里面的 title 即为这篇博客名，draft 草稿，false 状态即可展示 hugo server -D启动服务器，可以点击链接查看博客页面，ctrl+c 退出 修改 language，最下面的 theme 为当前主题 最后，我们要把博客放到 public 目录下给别人看，自己在 creator 里写就好； 命令行直接输入hugo，会发现多了一个 public 目录，直接cd public 创建一个 .</description>
+    </item>
+    
+  </channel>
+</rss>
