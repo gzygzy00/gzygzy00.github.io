@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 19 Aug 2019 21:08:29 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 16:51:24 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>https://gzygzy00.github.io//posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Tue, 20 Aug 2019 16:51:24 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description> 123 </description>
+    </item>
     
     <item>
       <title>记录用hugo搭建个人博客</title>
