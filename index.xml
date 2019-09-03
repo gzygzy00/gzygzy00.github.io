@@ -6,10 +6,28 @@
     <description>Recent content on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 22 Aug 2019 23:51:24 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 01:47:25 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>https://gzygzy00.github.io//posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Fri, 30 Aug 2019 01:47:25 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a 标签的用法 1. href 包含超链接指向的 URL 或 URL 片段。
+2. target &amp;lt;a href=&amp;quot;https://www.baidu.com&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;first&amp;lt;/a&amp;gt;  此时可在新窗口打开百度
+其他的还有_top, _parent, _self
+3. download 理论上在标签里加上download可以下载，但是很多浏览器不支持
+4. rel=noopener 暂空
+img 标签的用法 &amp;lt;img src=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;   作用  发出 get 请求，展示一张图片
+ 属性  src 为图片地址， alt 为图片加载失败时，显示的文字
+ 事件  onload/onerror
+ 响应式
+max-width: 100%;   table 标签的用法 table { width: 300px; table-layout: auto; border-spacing: 20px; border-collapse: collapse; } table th, td { border: 1px solid saddlebrown; }  &amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;!</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
