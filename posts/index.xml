@@ -6,10 +6,26 @@
     <description>Recent content in Posts on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 30 Aug 2019 01:47:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Dec 2019 20:27:14 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS 小结</title>
+      <link>https://gzygzy00.github.io//posts/css-%E5%B0%8F%E7%BB%93/</link>
+      <pubDate>Sat, 07 Dec 2019 20:27:14 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/css-%E5%B0%8F%E7%BB%93/</guid>
+      <description>有一段时间没写博客了，项目高峰期已过，该学习一波了
+小结一下 CSS
+ 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
+例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
+2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
+(2) border-box width = content + padding + border （通常使用的）
+3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
+ 内联子元素（文字内容） 浮动元素 块级子元素 border background  4.</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>

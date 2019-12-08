@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://gzygzy00.github.io//" />
 
-<meta property="og:updated_time" content="2019-08-30T01:47:25+08:00" />
+<meta property="og:updated_time" content="2019-12-07T20:27:14+08:00" />
 <meta itemprop="name" content="gzy的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/css-%E5%B0%8F%E7%BB%93/" class="color-inherit dim link">
+            CSS 小结
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          有一段时间没写博客了，项目高峰期已过，该学习一波了
+小结一下 CSS
+ 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
+例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
+2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
+(2) border-box width = content + padding + border （通常使用的）
+3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
+ 内联子元素（文字内容） 浮动元素 块级子元素 border background  4.
+        </div>
+          <a href="/posts/css-%E5%B0%8F%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
             HTML常用标签
             </a>
@@ -173,33 +204,25 @@ max-width: 100%;   table 标签的用法 table { width: 300px; table-layout: aut
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/%E8%AE%B0%E5%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
-            记录用hugo搭建个人博客
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          开始新的工作已经一个多月了，最近学习了用 hugo 在 GitHub 上搭建个人博客，记录一下。
-  进入hugo releases下载hugo 下载后将exe文件解压缩，并记录path： 右键我的电脑 -&gt; 属性 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 在 Path 里添加（上下都行） 此时可以通过命令行查看版本信息  进入hugo官网，点击Quick Start（看得懂可以直接参照官网进行设置，无视后面内容） 新建一个文件，在命令行输入: hugo new site 你的github账号.github.io-creator cd 刚刚创建的目录 git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml hugo new posts/my-first-post.md 这时可以用 VSCode 打开 -creator 目录下的 posts/my-first-post.md 里面的 title 即为这篇博客名，draft 草稿，false 状态即可展示 hugo server -D启动服务器，可以点击链接查看博客页面，ctrl+c 退出 修改 language，最下面的 theme 为当前主题 最后，我们要把博客放到 public 目录下给别人看，自己在 creator 里写就好； 命令行直接输入hugo，会发现多了一个 public 目录，直接cd public 创建一个 .
-        </div>
-          <a href="/posts/%E8%AE%B0%E5%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/%E8%AE%B0%E5%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+              记录用hugo搭建个人博客
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>

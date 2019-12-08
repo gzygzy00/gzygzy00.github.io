@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>gzy的博客  | CSS 小结</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="CSS 小结" />
+<meta property="og:description" content="有一段时间没写博客了，项目高峰期已过，该学习一波了
+小结一下 CSS
+ 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
+例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
+2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
+(2) border-box width = content &#43; padding &#43; border （通常使用的）
+3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
+ 内联子元素（文字内容） 浮动元素 块级子元素 border background  4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gzygzy00.github.io//posts/css-%E5%B0%8F%E7%BB%93/" />
+<meta property="article:published_time" content="2019-12-07T20:27:14+08:00" />
+<meta property="article:modified_time" content="2019-12-07T20:27:14+08:00" />
+<meta itemprop="name" content="CSS 小结">
+<meta itemprop="description" content="有一段时间没写博客了，项目高峰期已过，该学习一波了
+小结一下 CSS
+ 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
+例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
+2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
+(2) border-box width = content &#43; padding &#43; border （通常使用的）
+3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
+ 内联子元素（文字内容） 浮动元素 块级子元素 border background  4.">
+
+
+<meta itemprop="datePublished" content="2019-12-07T20:27:14&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-07T20:27:14&#43;08:00" />
+<meta itemprop="wordCount" content="135">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS 小结"/>
+<meta name="twitter:description" content="有一段时间没写博客了，项目高峰期已过，该学习一波了
+小结一下 CSS
+ 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
+例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
+2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
+(2) border-box width = content &#43; padding &#43; border （通常使用的）
+3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
+ 内联子元素（文字内容） 浮动元素 块级子元素 border background  4."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://gzygzy00.github.io//" class="f3 fw2 hover-white no-underline white-90 dib">
+      gzy的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">CSS 小结</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-07T20:27:14&#43;08:00">December 7, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<blockquote>
+<p>有一段时间没写博客了，项目高峰期已过，该学习一波了</p>
+
+<p>小结一下 CSS</p>
+</blockquote>
+
+<h2 id="1-浏览器渲染原理">1. 浏览器渲染原理</h2>
+
+<ol>
+<li>根据 HTML 构建 DOM</li>
+<li>根据 CSS 构建 CSSOM</li>
+<li>将两棵树合成一棵渲染树 rendertree</li>
+<li>Layout 布局（文档流、盒模型、计算大小和位置）</li>
+<li>Paint 绘制（边框颜色、文字颜色、阴影等）</li>
+<li>Compose 合成（根据层叠关系展示画面）</li>
+</ol>
+
+<p><img src="/images/render-tree-construction.png" alt="tree" /></p>
+
+<p>三种更新方式：</p>
+
+<p><img src="/images/frame-full.jpg" alt="1. JS / CSS &gt; 样式 &gt; 布局 &gt; 绘制 &gt; 合成" /></p>
+
+<p><img src="/images/frame-no-layout.jpg" alt="2. JS / CSS &gt; 样式 &gt; 绘制 &gt; 合成" /></p>
+
+<p><img src="/images/frame-no-layout-paint.jpg" alt="3. JS / CSS &gt; 样式 &gt; 合成" /></p>
+
+<p>例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。</p>
+
+<h2 id="2-盒模型-box-sizing">2. 盒模型 (box-sizing)</h2>
+
+<h3 id="1-content-box">(1) content-box</h3>
+
+<p>width = content
+（兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）</p>
+
+<h3 id="2-border-box">(2) border-box</h3>
+
+<p>width = content + padding + border
+（通常使用的）</p>
+
+<h2 id="3-一个-div-的分层">3. 一个 div 的分层</h2>
+
+<p>从上往下（屏幕外向里）依次是：</p>
+
+<ol>
+<li>内联子元素（文字内容）</li>
+<li>浮动元素</li>
+<li>块级子元素</li>
+<li>border</li>
+<li>background</li>
+</ol>
+
+<h2 id="4-css-动画的两种做法-transition-和-animation">4. CSS 动画的两种做法（transition 和 animation）</h2>
+
+<h3 id="1-transition">(1) transition</h3>
+
+<p>常用 transform：</p>
+
+<ul>
+<li>位移 translate</li>
+<li>缩放 scale</li>
+<li>旋转 rotate</li>
+<li>倾斜 skew</li>
+</ul>
+
+<p><big>1. 一般都需要配合 transition</big></p>
+
+<p><big>2. inline 元素不支持 transform，需先变成 block</big></p>
+
+<p><strong>transition</strong> 即过渡，起补充中间帧的作用</p>
+
+<p>transition: 属性名|时长|过渡方式|延迟</p>
+
+<p>none &ndash;&gt; block 一般改为 hidden &ndash;&gt; visible</p>
+
+<h3 id="2-animation">(2) animation</h3>
+
+<p>animation: 时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名</p>
+
+<p><em>具体功能有什么可单独搜索 MDN 或其他网站对应内容</em></p>
+
+<h3 id="3-keyframe">(3) @keyframe</h3>
+
+<pre><code class="language-css">@keyframe 属性名 {
+  from {
+  }
+  to {
+  }
+}
+
+/* or */
+
+@keyframe 属性名 {
+  0% {
+  }
+  50% {
+  }
+  100% {
+  }
+}
+</code></pre>
+
+<p>参考来自：饥人谷、<a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction">渲染树构建、布局及绘制</a>、<a href="https://developers.google.com/web/fundamentals/performance/rendering/">渲染性能</a>、<a href="https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count">坚持仅合成器的属性和管理层计数</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://gzygzy00.github.io//" >
+    &copy; 2019 gzy的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
