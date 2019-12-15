@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>gzy的博客  | 浅析 URL</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="浅析 URL" />
+<meta property="og:description" content="URL  统一资源定位符（英语：Uniform Resource Locator，缩写：URL；或称统一资源定位器、定位地址、URL 地址，俗称网页地址或简称网址）是因特网上标准的资源的地址（Address），如同在网络上的门牌。 详细-维基百科
+  URL 由协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点组成    https，是协议； zh.wikipedia.org，是服务器； 80，是服务器上的网络端口号； /w/index.php，是路径； ?title=Special:随机页面，是询问。    #（&#43;内容），为锚点  一般访问一个网站，比如输入 baidu.com 浏览器会向电信/联通提供的 DNS 服务器询问对应的 IP，回答 IP 后，浏览器向对应 IP 的 80（提供 http 服务）/443（提供 https 服务）端口发送请求。
+1. DNS  域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 端口 53。当前，对于每一级域名长度的限制是 63 个字符，域名总长度则不能超过 253 个字符。 详细-维基百科
+ 简单的说，DNS 就是将域名（如 www.baidu.com ）转化为机器可读的 IP 地址（如 192.0.11.1）
+ nslookup 命令用于查询 DNS 的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。  2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gzygzy00.github.io//posts/%E6%B5%85%E6%9E%90-url/" />
+<meta property="article:published_time" content="2019-12-14T14:38:01+08:00" />
+<meta property="article:modified_time" content="2019-12-14T14:38:01+08:00" />
+<meta itemprop="name" content="浅析 URL">
+<meta itemprop="description" content="URL  统一资源定位符（英语：Uniform Resource Locator，缩写：URL；或称统一资源定位器、定位地址、URL 地址，俗称网页地址或简称网址）是因特网上标准的资源的地址（Address），如同在网络上的门牌。 详细-维基百科
+  URL 由协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点组成    https，是协议； zh.wikipedia.org，是服务器； 80，是服务器上的网络端口号； /w/index.php，是路径； ?title=Special:随机页面，是询问。    #（&#43;内容），为锚点  一般访问一个网站，比如输入 baidu.com 浏览器会向电信/联通提供的 DNS 服务器询问对应的 IP，回答 IP 后，浏览器向对应 IP 的 80（提供 http 服务）/443（提供 https 服务）端口发送请求。
+1. DNS  域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 端口 53。当前，对于每一级域名长度的限制是 63 个字符，域名总长度则不能超过 253 个字符。 详细-维基百科
+ 简单的说，DNS 就是将域名（如 www.baidu.com ）转化为机器可读的 IP 地址（如 192.0.11.1）
+ nslookup 命令用于查询 DNS 的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。  2.">
+
+
+<meta itemprop="datePublished" content="2019-12-14T14:38:01&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-14T14:38:01&#43;08:00" />
+<meta itemprop="wordCount" content="119">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浅析 URL"/>
+<meta name="twitter:description" content="URL  统一资源定位符（英语：Uniform Resource Locator，缩写：URL；或称统一资源定位器、定位地址、URL 地址，俗称网页地址或简称网址）是因特网上标准的资源的地址（Address），如同在网络上的门牌。 详细-维基百科
+  URL 由协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点组成    https，是协议； zh.wikipedia.org，是服务器； 80，是服务器上的网络端口号； /w/index.php，是路径； ?title=Special:随机页面，是询问。    #（&#43;内容），为锚点  一般访问一个网站，比如输入 baidu.com 浏览器会向电信/联通提供的 DNS 服务器询问对应的 IP，回答 IP 后，浏览器向对应 IP 的 80（提供 http 服务）/443（提供 https 服务）端口发送请求。
+1. DNS  域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 端口 53。当前，对于每一级域名长度的限制是 63 个字符，域名总长度则不能超过 253 个字符。 详细-维基百科
+ 简单的说，DNS 就是将域名（如 www.baidu.com ）转化为机器可读的 IP 地址（如 192.0.11.1）
+ nslookup 命令用于查询 DNS 的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。  2."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://gzygzy00.github.io//" class="f3 fw2 hover-white no-underline white-90 dib">
+      gzy的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">浅析 URL</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-14T14:38:01&#43;08:00">December 14, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="url">URL</h1>
+
+<blockquote>
+<p>统一资源定位符（英语：Uniform Resource Locator，缩写：URL；或称统一资源定位器、定位地址、URL 地址，俗称网页地址或简称网址）是因特网上标准的资源的地址（Address），如同在网络上的门牌。
+<a href="https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6">详细-维基百科</a></p>
+</blockquote>
+
+<ul>
+<li>URL 由协议+域名或 IP+端口号+路径+查询字符串+锚点组成</li>
+</ul>
+
+<blockquote>
+<ol>
+<li>https，是协议；</li>
+<li>zh.wikipedia.org，是服务器；</li>
+<li>80，是服务器上的网络端口号；</li>
+<li>/w/index.php，是路径；</li>
+<li>?title=Special:随机页面，是询问。</li>
+</ol>
+</blockquote>
+
+<ol>
+<li>#（+内容），为锚点</li>
+</ol>
+
+<p>一般访问一个网站，比如输入 baidu.com 浏览器会向电信/联通提供的 DNS 服务器询问对应的 IP，回答 IP 后，浏览器向对应 IP 的 80（提供 http 服务）/443（提供 https 服务）端口发送请求。</p>
+
+<h2 id="1-dns">1. DNS</h2>
+
+<blockquote>
+<p>域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 端口 53。当前，对于每一级域名长度的限制是 63 个字符，域名总长度则不能超过 253 个字符。
+<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">详细-维基百科</a></p>
+</blockquote>
+
+<p>简单的说，DNS 就是将域名（如 www.baidu.com ）转化为机器可读的 IP 地址（如 192.0.11.1）</p>
+
+<ul>
+<li>nslookup 命令用于查询 DNS 的记录，查看域名解析是否正常，在网络故障的时候用来诊断网络问题。</li>
+</ul>
+
+<h2 id="2-ip">2. IP</h2>
+
+<blockquote>
+<p>网际协议（英语：Internet Protocol，缩写：IP；也称互联网协议）是用于分组交换数据网络的一种协议。</p>
+
+<p>IP 是在 TCP/IP 协议族中网络层的主要协议，任务仅仅是根据源主机和目的主机的地址来传送数据。为此目的，IP 定义了寻址方法和数据报的封装结构。第一个架构的主要版本为 IPv4，目前仍然是广泛使用的互联网协议，尽管世界各地正在积极部署 IPv6。
+<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">详细-维基百科</a></p>
+</blockquote>
+
+<p>数据在 IP 互联网中传送时会被封装为数据包。</p>
+
+<p>ping 命令是常用的网络命令，它通常用来测试与目标主机的连通性。</p>
+
+<p>ping [参数][主机名或ip地址]</p>
+
+<blockquote>
+<p>2019 年 11 月 26 日，全球所有 43 亿个 IPv4 地址已分配完毕，这意味着没有更多的 IPv4 地址可以分配给 ISP 和其他大型网络基础设施提供商。</p>
+</blockquote>
+
+<h2 id="3-域名">3. 域名</h2>
+
+<blockquote>
+<p>网域名称（英语：Domain Name，简称：Domain），简称域名、网域，是由一串用点分隔的字符组成的互联网上某一台计算机或计算机组的名称，用于在数据传输时标识计算机的电子方位。域名可以说是一个 IP 地址的代称，目的是为了便于记忆后者。例如，wikipedia.org 是一个域名，和 IP 地址 208.80.152.2 相对应。人们可以直接访问 wikipedia.org 来代替 IP 地址，然后域名系统（DNS）就会将它转化成便于机器识别的 IP 地址。这样，人们只需要记忆 wikipedia.org 这一串带有特殊含义的字符，而不需要记忆没有含义的数字。</p>
+
+<p>域名的核心是域名系统（英语：Domain Name System，缩写：DNS），域名系统中的任何名称都是域名。在域名系统的层次结构中，各种域名都隶属于域名系统根域的下级。域名的第一级是顶级域，它包括通用顶级域，例如.com、.net 和.org；以及国家和地区顶级域，例如.us、.cn 和.tk。顶级域名下一层是二级域名，一级一级地往下。这些域名向人们提供注册服务，人们可以用它创建公开的互联网资源或运行网站。顶级域名的管理服务由对应的域名注册管理机构（域名注册局）负责，注册服务通常由域名注册商负责。</p>
+
+<p><a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">详细-维基百科</a></p>
+
+<p><a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">详细分类-百度百科</a></p>
+</blockquote>
+
+<p>参考来自：饥人谷、百度百科、维基百科</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://gzygzy00.github.io//" >
+    &copy; 2019 gzy的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
