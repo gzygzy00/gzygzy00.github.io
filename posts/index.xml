@@ -6,10 +6,25 @@
     <description>Recent content in Posts on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 14 Dec 2019 14:38:01 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 00:22:18 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript 的历史简介</title>
+      <link>https://gzygzy00.github.io//posts/javascript-%E7%9A%84%E5%8E%86%E5%8F%B2%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Wed, 25 Dec 2019 00:22:18 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/javascript-%E7%9A%84%E5%8E%86%E5%8F%B2%E7%AE%80%E4%BB%8B/</guid>
+      <description>JavaScript（通常缩写为 JS）是一种高级的、解释型的编程语言。JavaScript 是一门基于原型、函数先行的语言，是一门多范式的语言，它支持面向对象编程，命令式编程，以及函数式编程。
+ 1993 年，最早流行的图形接口网页浏览器 NCSA Mosaic 发表了。
+ 1994 年底，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版，成为 90 年代互联网的主要浏览器。
+ 网景预见到网络需要变得更动态。1995 年，网景招募了布兰登·艾克，他仅用了 10 天就把 JavaScript 的原型设计出来了。
+ JavaScript 推出后在浏览器上大获成功，微软公司在不久后就为 Internet Explorer 3 浏览器推出了 JScript，以与处于市场领导地位的网景产品同台竞争。JScript 也是一种 JavaScript 实现，这两个 JavaScript 语言版本在浏览器端共存意味着语言标准化的缺失。
+ 1996 年 11 月，网景正式向 ECMA（欧洲计算机制造商协会）提交语言标准。1997 年 6 月，ECMA 以 JavaScript 语言为基础制定了 ECMAScript 标准规范 ECMA-262。JavaScript 成为了 ECMAScript 最著名的实现之一。
+  参考来自：维基百科</description>
+    </item>
     
     <item>
       <title>浅析 URL</title>
