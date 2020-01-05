@@ -6,10 +6,26 @@
     <description>Recent content on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 25 Dec 2019 00:22:18 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 18:49:15 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript 的基本语法简介</title>
+      <link>https://gzygzy00.github.io//posts/javascript-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Fri, 03 Jan 2020 18:49:15 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/javascript-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/</guid>
+      <description>1. 语句&amp;amp;表达式 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句（statement）。
+语句是为了完成某种任务而进行的操作，例如赋值语句。
+var num = 1 + 2;  其中 1 + 2 为表达式（expression），指一个为了得到返回值的计算式。
+所以语句主要是为了进行某种操作，一般情况不需要返回值（可能有也可能没有）且会改变环境（赋值、声明）；而表达式一般则是返回一个值。
+2. 标识符的规则 标识符（identifier）指的是用来识别各种值的合法名称，例如变量名、函数名。
+首先，JS 的标识符大小写敏感； 其次，标识符命名规则：
+ 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（\$）和下划线（_）。 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字 0-9。   JavaScript 有一些保留字，不能用作标识符：arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。
+ 3. if else 语句 if(表达式) { 语句1 } else { 语句2 } // or function fn(){ if(表达式) { return 表达式 } if(表达式) { return 表达式 } return 表达式 }  4. while for 语句 while(表达式) { 语句 } while (i &amp;lt; 10) { console.</description>
+    </item>
     
     <item>
       <title>JavaScript 的历史简介</title>

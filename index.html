@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://gzygzy00.github.io//" />
 
-<meta property="og:updated_time" content="2019-12-25T00:22:18+08:00" />
+<meta property="og:updated_time" content="2020-01-03T18:49:15+08:00" />
 <meta itemprop="name" content="gzy的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/javascript-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/" class="color-inherit dim link">
+            JavaScript 的基本语法简介
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          1. 语句&amp;表达式 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句（statement）。
+语句是为了完成某种任务而进行的操作，例如赋值语句。
+var num = 1 + 2;  其中 1 + 2 为表达式（expression），指一个为了得到返回值的计算式。
+所以语句主要是为了进行某种操作，一般情况不需要返回值（可能有也可能没有）且会改变环境（赋值、声明）；而表达式一般则是返回一个值。
+2. 标识符的规则 标识符（identifier）指的是用来识别各种值的合法名称，例如变量名、函数名。
+首先，JS 的标识符大小写敏感； 其次，标识符命名规则：
+ 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（\$）和下划线（_）。 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字 0-9。   JavaScript 有一些保留字，不能用作标识符：arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。
+ 3. if else 语句 if(表达式) { 语句1 } else { 语句2 } // or function fn(){ if(表达式) { return 表达式 } if(表达式) { return 表达式 } return 表达式 }  4. while for 语句 while(表达式) { 语句 } while (i &lt; 10) { console.
+        </div>
+          <a href="/posts/javascript-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/javascript-%E7%9A%84%E5%8E%86%E5%8F%B2%E7%AE%80%E4%BB%8B/" class="color-inherit dim link">
             JavaScript 的历史简介
             </a>
@@ -171,43 +202,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/css-%E5%B0%8F%E7%BB%93/" class="color-inherit dim link">
-            CSS 小结
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          有一段时间没写博客了，项目高峰期已过，该学习一波了
-小结一下 CSS
- 1. 浏览器渲染原理  根据 HTML 构建 DOM 根据 CSS 构建 CSSOM 将两棵树合成一棵渲染树 rendertree Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（边框颜色、文字颜色、阴影等） Compose 合成（根据层叠关系展示画面）  三种更新方式：
-例如用 transform: translateX 替代 left，性能上不会产生 repaint，要更好。
-2. 盒模型 (box-sizing) (1) content-box width = content （兼容低版本 ie 可以用 content-box 避免出现 scroll 时宽度变化）
-(2) border-box width = content + padding + border （通常使用的）
-3. 一个 div 的分层 从上往下（屏幕外向里）依次是：
- 内联子元素（文字内容） 浮动元素 块级子元素 border background  4.
-        </div>
-          <a href="/posts/css-%E5%B0%8F%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/css-%E5%B0%8F%E7%BB%93/" class="link black dim">
+              CSS 小结
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
@@ -242,7 +248,7 @@
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://gzygzy00.github.io//" >
-    &copy; 2019 gzy的博客
+    &copy; 2020 gzy的博客
   </a>
     <div>
 
