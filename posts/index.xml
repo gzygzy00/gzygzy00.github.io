@@ -6,10 +6,23 @@
     <description>Recent content in Posts on gzy的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 03 Jan 2020 18:49:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 20:43:22 +0800</lastBuildDate>
     
 	<atom:link href="https://gzygzy00.github.io//posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 对象基本用法</title>
+      <link>https://gzygzy00.github.io//posts/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Tue, 28 Apr 2020 20:43:22 +0800</pubDate>
+      
+      <guid>https://gzygzy00.github.io//posts/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>对象 JS 有7种数据类型： number, string, bool, symbol, null, undefined, object
+而对象 object 的定义为： 1. 无序的数据集合 2. 键值对的集合
+ key 对应对象的属性名 property value 对应对象的属性值  内容1：声明对象的两种语法 1.
+let obj1 = {&#39;name&#39;: &#39;Billy&#39;, &#39;age&#39;: 18}  2.
+let obj2 = new Object({name: &#39;Billy&#39;, age: 18})   键名是字符串，不是标识符，可包含任意字符 引号可以省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串  内容2：如何删除对象的属性 let obj = {&#39;name&#39;: &#39;Billy&#39;, &#39;age&#39;: 18} delete obj.name delete obj[&#39;age&#39;]  // 不含属性名 ’sex‘ in obj === false // 含有属性名，但是值为 undefined ’xxx&#39; in obj &amp;amp;&amp;amp; obj.</description>
+    </item>
     
     <item>
       <title>JavaScript 的基本语法简介</title>
